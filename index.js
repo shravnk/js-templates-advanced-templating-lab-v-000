@@ -30,6 +30,7 @@ function createRecipe() {
   for(let i=0; i < recipeNodes.length; i++) {
     recipeIngredients.push(recipeNodes[i].value)
     }
+    debugger
   document.getElementById("main").innerHTML = "suck me"
   // recipeTemplate({recipeName, recipeDescription, recipeIngredients}}
   }
