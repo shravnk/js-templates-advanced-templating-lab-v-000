@@ -12,7 +12,7 @@ function init() {
   let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
 
   document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate({'submitAction': 'createRecipe()'})
-  // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+  //
 }
 
 
@@ -31,7 +31,7 @@ function createRecipe() {
     recipeIngredients.push(recipeNodes[i].value)
     }
 
-  document.getElementById("main").innerHTML = recipeTemplate({recipeName, recipeDescription, recipeIngredients}}
+  document.getElementById("main").innerHTML = recipeTemplate({recipeName, recipeDescription, recipeIngredients})
   }
 
 function displayEditForm() {
