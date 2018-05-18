@@ -28,7 +28,7 @@ function createRecipe() {
 
   let recipeIngredients = []
   for(let i=0; i < ingredientNodes.length; i++) {
-    recipeIngredients.push(recipeNodes[i].value)
+    recipeIngredients.push(ingredientNodes[i].value)
     }
   recipe = {recipeName, recipeDescription, recipeIngredients}
   document.getElementById("main").innerHTML = recipeTemplate(recipe)
