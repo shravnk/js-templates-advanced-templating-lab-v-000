@@ -39,7 +39,7 @@ function createRecipe() {
 
 function displayEditForm() {
   let recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
-  
+
   document.getElementsByName("main")[0].innerHTML += recipeFormTemplate({'submitAction': 'updateRecipe()'})
 }
 
