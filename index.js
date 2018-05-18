@@ -7,7 +7,7 @@ function init() {
   })
 
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
-  recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+  let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
 
   document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate()
   // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
