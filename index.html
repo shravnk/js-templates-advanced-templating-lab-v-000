@@ -29,7 +29,9 @@
     </script>
 
     <script id="recipe-details-partial" type= "text/x-handlebars-template">
-
+      {{#each this}}
+        {{displayIngredient}}
+      {{/each}}
     </script>
 
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>

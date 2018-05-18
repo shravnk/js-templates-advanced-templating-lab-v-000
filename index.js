@@ -16,5 +16,5 @@ function createRecipe() {
   let recipeName = document.getElementsByName("name")[0].value
   let recipeDescription = document.getElementsByName("description")[0].value
   let recipeIngredients = document.getElementsByName("ingredient").value
-  
+
 }
