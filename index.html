@@ -11,7 +11,7 @@
     </main>
 
     <script id="recipe-form-template" type="text/x-handlebars-template">
-      <form onsubmit="createRecipe()" id="recipe-form">
+      <form onsubmit="{{submitAction}}" id="recipe-form">
         {{> recipeFormPartial}}
         <input type="submit">
       </form>
