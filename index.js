@@ -22,7 +22,7 @@ function createRecipe() {
   let recipeName = document.getElementsByName("name")[0].value
   let recipeDescription = document.getElementsByName("description")[0].value
 
-  let ingredientNodes = document.getElementsByName("ingredient")
+  let ingredientNodes = document.getElementsByName("ingredients")
 
   let recipeIngredients = []
   for(let i=0; i < recipeNodes.length; i++) {
