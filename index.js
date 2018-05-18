@@ -30,7 +30,7 @@ function createRecipe() {
   for(let i=0; i < ingredientNodes.length; i++) {
     ingredients.push(ingredientNodes[i].value)
     }
-  recipe = {name, description, ingredients}
+  let recipe = {name, description, ingredients}
 
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 
