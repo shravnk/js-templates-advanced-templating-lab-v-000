@@ -12,6 +12,11 @@
 
     <script id="recipe-form-template" type="text/x-handlebars-template">
       <form onsubmit="createRecipe()" id="recipe-form">
+        {{> recipeFormPartial}}
+      </form>
+    </script>
+    
+    <script id="recipe-form-partial" type="text/x-handlebars-template">
         Name: <input type="text" id="name"/>
         Description: <input type="text" id="description"/>
         Ingredient: <input type="text" name="ingredients"/>
