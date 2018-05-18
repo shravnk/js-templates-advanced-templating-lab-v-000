@@ -6,8 +6,8 @@ function init() {
     return new Handlebars.SafeString("<p>" + this + "</p>")
   })
 
-  Handlebars.compile(document.getElementById("recipe-template").innerHTML)
-  Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+  recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+  recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 }
 
@@ -23,6 +23,9 @@ function createRecipe() {
 }
 
 function displayEditForm() {
-  form = document.getElementById("recipe-form-template")
-  document.getElementsByName("main")[0].innerHTML += 
+  document.getElementsByName("main")[0].innerHTML +=
+}
+
+function updateRecipe() {
+
 }
