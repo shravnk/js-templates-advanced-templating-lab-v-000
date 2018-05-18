@@ -11,7 +11,7 @@ function init() {
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
   let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
 
-  document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate()
+  document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate({'submitAction': 'createRecipe()'})
   // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 }
 
@@ -31,7 +31,7 @@ function createRecipe() {
   for(let i=0; i < recipeNodes.length; i++) {
     recipeIngredients.push(recipeNodes[i].value)
     }
-    
+
   document.getElementById("main").innerHTML = "suck me"
   // recipeTemplate({recipeName, recipeDescription, recipeIngredients}}
   }
