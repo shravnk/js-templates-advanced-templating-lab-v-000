@@ -28,9 +28,9 @@ function createRecipe() {
 
   let ingredients = []
   for(let i=0; i < ingredientNodes.length; i++) {
-    recipeIngredients.push(ingredientNodes[i].value)
+    ingredients.push(ingredientNodes[i].value)
     }
-  recipe = {recipeName, recipeDescription, recipeIngredients}
+  recipe = {name, description, ingredients}
 
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 
