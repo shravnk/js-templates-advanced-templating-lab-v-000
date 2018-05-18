@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe() {
+  debugger
   let recipeName = document.getElementById("name")[0].value
   let recipeDescription = document.getElementById("description")[0].value
 
@@ -30,7 +31,7 @@ function createRecipe() {
   for(let i=0; i < recipeNodes.length; i++) {
     recipeIngredients.push(recipeNodes[i].value)
     }
-    debugger
+    
   document.getElementById("main").innerHTML = "suck me"
   // recipeTemplate({recipeName, recipeDescription, recipeIngredients}}
   }
