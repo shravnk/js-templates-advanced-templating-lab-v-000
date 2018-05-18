@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe() {
-  debugger
   let recipeName = document.getElementById("name")[0].value
   let recipeDescription = document.getElementById("description")[0].value
 
