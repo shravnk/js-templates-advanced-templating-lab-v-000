@@ -5,6 +5,10 @@ function init() {
   Handlebars.registerHelper('displayIngredient', function() {
     return new Handlebars.SafeString("<p>" + this + "</p>")
   })
+
+  Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+  Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+  // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 }
 
 
