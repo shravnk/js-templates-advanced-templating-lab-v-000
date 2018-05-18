@@ -21,13 +21,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 function createRecipe() {
   let recipeName = document.getElementsByName("name")[0].value
   let recipeDescription = document.getElementsByName("description")[0].value
-  
+
   let ingredientNodes = document.getElementsByName("ingredient")
-  
+
   let recipeIngredients = []
   for(let i=0; i < recipeNodes.length; i++) {
-    recipeIngredients.push(recipeNodes)
-    
+    recipeIngredients.push(recipeNodes[i].value
+    }
+  return {recipeName, recipeDescription, recipeIngredients}
   }
 }
 
