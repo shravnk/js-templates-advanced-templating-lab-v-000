@@ -23,7 +23,7 @@ function createRecipe() {
 }
 
 function displayEditForm() {
-  document.getElementsByName("main")[0].innerHTML +=
+  document.getElementsByName("main")[0].innerHTML += recipeFormTemplate
 }
 
 function updateRecipe() {
