@@ -30,7 +30,6 @@ function createRecipe() {
     }
   return {recipeName, recipeDescription, recipeIngredients}
   }
-}
 
 function displayEditForm() {
   document.getElementsByName("main")[0].innerHTML += recipeFormTemplate
