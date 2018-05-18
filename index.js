@@ -33,7 +33,7 @@ function createRecipe() {
   recipe = {recipeName, recipeDescription, recipeIngredients}
 
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
-  
+
   document.getElementById("main").innerHTML = recipeTemplate(recipe)
   }
 
