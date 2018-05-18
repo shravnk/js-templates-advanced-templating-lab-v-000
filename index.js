@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 function createRecipe() {
-  let recipeName = document.getElementsByName("name")[0].innerHTML.value
-  let recipeDescription = document.getElementsByName("description")[0].innerHTML.value
-  let recipeIngredients = document.getElementsByName("ingredient").innerHTML.value
+  let recipeName = document.getElementsByName("name")[0].value
+  let recipeDescription = document.getElementsByName("description")[0].value
+  let recipeIngredients = document.getElementsByName("ingredient").value
 }
 
 function displayEditForm() {
@@ -29,5 +29,5 @@ function displayEditForm() {
 }
 
 function updateRecipe() {
-  
+
 }
