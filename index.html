@@ -23,8 +23,14 @@
     </script>
 
     <script id="recipe-template" type= "text/x-handlebars-template">
-      
+      Name: {{name}}
+      {{> namePartial }}
     </script>
+
+    <script id="recipe-details-partial" type= "text/x-handlebars-template">
+
+    </script>
+
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
