@@ -26,7 +26,7 @@ function createRecipe() {
 
   let recipeIngredients = []
   for(let i=0; i < recipeNodes.length; i++) {
-    recipeIngredients.push(recipeNodes[i].value
+    recipeIngredients.push(recipeNodes[i].value)
     }
   return {recipeName, recipeDescription, recipeIngredients}
   }
