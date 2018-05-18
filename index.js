@@ -37,5 +37,5 @@ function displayEditForm() {
 }
 
 function updateRecipe() {
-
+  createRecipe()
 }
