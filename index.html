@@ -10,7 +10,7 @@
     <main id="main">
     </main>
 
-    <script id="recipe-form-template">
+    <script id="recipe-form-template" type="text/x-handlebars-template">
       <form onsubmit="createRecipe()">
         Name: <input type="text" name="name"/>
         Description: <input type="text" name="description"/>
@@ -20,6 +20,10 @@
         Ingredient: <input type="text" name="ingredient"/>
         Ingredient: <input type="text" name="ingredient"/>
       </form>
+    </script>
+
+    <script id="recipe-template" type= "text/x-handlebars-template">
+      
     </script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
