@@ -39,8 +39,8 @@ function createRecipe() {
 
 function displayEditForm() {
   let recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML
-
-  document.getElementsByName("main")[0].innerHTML += recipeFormTemplate({'submitAction': 'updateRecipe()'})
+  let template = Handlebars.compile(recipeFormTemplate)
+  document.getElementById("main").innerHTML += template({'submitAction': 'updateRecipe()'})
 }
 
 function updateRecipe() {
