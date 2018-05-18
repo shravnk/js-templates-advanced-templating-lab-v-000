@@ -10,7 +10,7 @@ function init() {
 
   let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
   let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-
+  debugger
   document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate({'submitAction': 'createRecipe()'})
   // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 }
