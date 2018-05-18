@@ -8,7 +8,7 @@ function init() {
     return new Handlebars.SafeString("<p>" + this + "</p>")
   })
 
-  let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+
   let recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
 
   document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate({'submitAction': 'createRecipe()'})
@@ -31,6 +31,9 @@ function createRecipe() {
     recipeIngredients.push(ingredientNodes[i].value)
     }
   recipe = {recipeName, recipeDescription, recipeIngredients}
+
+  let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+  
   document.getElementById("main").innerHTML = recipeTemplate(recipe)
   }
 
