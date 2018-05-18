@@ -30,7 +30,7 @@ function createRecipe() {
   for(let i=0; i < recipeNodes.length; i++) {
     recipeIngredients.push(recipeNodes[i].value)
     }
-  return {recipeName, recipeDescription, recipeIngredients}
+  document.getElementById("main").innerHTML = recipeTemplate({recipeName, recipeDescription, recipeIngredients}}
   }
 
 function displayEditForm() {
