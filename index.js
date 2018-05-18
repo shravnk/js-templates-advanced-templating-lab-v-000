@@ -6,8 +6,10 @@ function init() {
     return new Handlebars.SafeString("<p>" + this + "</p>")
   })
 
-  recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+  let recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
   recipeFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
+
+  document.getElementsByTagName("main")[0].innerHTML = recipeFormTemplate()
   // Handlebars.compile(document.getElementById("recipe-template").innerHTML)
 }
 
@@ -27,5 +29,5 @@ function displayEditForm() {
 }
 
 function updateRecipe() {
-
+  
 }
