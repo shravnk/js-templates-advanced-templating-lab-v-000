@@ -28,14 +28,14 @@
     </script>
 
     <script id="recipe-template" type= "text/x-handlebars-template">
-      <h1>Name: {{name}}</h1>
+      <h1>Name: {{recipeName}}</h1>
       <a href="#" onclick="displayEditForm();">Edit Recipe</a>
       {{> recipeDetailsPartial }}
     </script>
 
     <script id="recipe-details-partial" type= "text/x-handlebars-template">
-      <p>{{description}}</p>
-      {{#each ingredients}}
+      <p>{{recipeDescription}}</p>
+      {{#each recipeIngredients}}
         {{displayIngredient this}}
       {{/each}}
     </script>
